@@ -6,11 +6,10 @@
 - clean: ['~']
 
 - link:
-    ~/.bash_profile:
-    ~/.bashrc:
     ~/.ssh/config:
       path: ssh/config
     ~/.vimrc:
+    ~/.zshrc:
 
 - shell:
   # install homebrew
