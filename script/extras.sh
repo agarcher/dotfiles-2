@@ -2,7 +2,7 @@
 
 # make homebrew zsh the default shell
 if ! grep -q "$(which zsh)" /etc/shells; then
-  sudo echo "$(which zsh)" >> /etc/shells
+  echo "$(which zsh)" | sudo tee /etc/shells -a
 fi
 chsh -s /usr/local/bin/zsh
 
