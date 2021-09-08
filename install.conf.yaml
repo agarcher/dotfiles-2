@@ -10,6 +10,7 @@
 - clean: ['~']
 
 - link:
+    ~/.fzf.zsh:
     ~/.ssh/config:
       path: ssh/config
     ~/.vimrc:
@@ -17,7 +18,6 @@
 
 - shell:
   # install homebrew
-  - echo "wtf"
   - /bin/sh script/homebrew.sh
   # install homebrew packages from Brewfile
   - brew bundle
