@@ -1,11 +1,23 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
 - clean: ['~']
 
 - link:
+    ~/.bash_profile:
+    ~/.bashrc:
     ~/.ssh/config:
-        path: ssh/config
-        create: true
-    ~/bin:
-        path: bin/
-        create: true
+      path: ssh/config
+    ~/.vimrc:
 
-
+- shell:
+  # install homebrew
+  - ./script/homebrew.sh
+  # install homebrew packages from Brewfile
+  - brew bundle --file=$(DOTFILES_DIR)/Brewfile || true
+  # install casks from Caskfile
+  # - brew bundle --file=$(DOTFILES_DIR)/Caskfile || true
+  # additional setup and configuration
+  - ./script/extras.sh

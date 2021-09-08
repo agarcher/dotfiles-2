@@ -1,0 +1,11 @@
+# Get IP from hostname
+
+hostname2ip() {
+  ping -c 1 "$1" | egrep -m1 -o '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
+}
+
+# Find real from shortened url
+
+unshorten() {
+  curl -sIL $1 | sed -n 's/Location: *//p'
+}
