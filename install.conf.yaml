@@ -13,10 +13,11 @@
 
 - shell:
   # install homebrew
-  - ./script/homebrew.sh
+  - echo "wtf"
+  - . script/homebrew.sh
   # install homebrew packages from Brewfile
   - brew bundle --file=$(DOTFILES_DIR)/Brewfile || true
   # install casks from Caskfile
   # - brew bundle --file=$(DOTFILES_DIR)/Caskfile || true
   # additional setup and configuration
-  - ./script/extras.sh
+  - . script/extras.sh
