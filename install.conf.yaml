@@ -20,7 +20,7 @@
   - echo "wtf"
   - /bin/sh script/homebrew.sh
   # install homebrew packages from Brewfile
-  - brew bundle --file=script/Brewfile || true
+  - brew bundle
   # install casks from Caskfile
   # - brew bundle --file=$(DOTFILES_DIR)/Caskfile || true
   # additional setup and configuration
