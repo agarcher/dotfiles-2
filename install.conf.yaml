@@ -18,10 +18,10 @@
 
 - shell:
   # install homebrew
-  - /bin/sh script/homebrew.sh
+  - /bin/bash script/homebrew.sh
   # install homebrew packages from Brewfile
   - brew bundle
   # install casks from Caskfile
   # - brew bundle --file=$(DOTFILES_DIR)/Caskfile || true
   # additional setup and configuration
-  - /bin/sh script/extras.sh
+  - /bin/bash script/extras.sh

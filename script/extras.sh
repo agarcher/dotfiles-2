@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # make zsh the default shell
 chsh -s /usr/local/bin/zsh
