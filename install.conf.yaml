@@ -11,6 +11,9 @@
 
 - link:
     ~/.fzf.zsh:
+    ~/.gitconfig:
+    ~/.gitconfig.local:
+    ~/.gitignore:
     ~/.ssh/config:
       path: ssh/config
     ~/.tmux.conf:
