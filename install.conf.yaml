@@ -13,6 +13,8 @@
     ~/.fzf.zsh:
     ~/.ssh/config:
       path: ssh/config
+    ~/.tmux.conf:
+    ~/.tmux.conf.local:
     ~/.vimrc:
     ~/.zshrc:
 
