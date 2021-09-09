@@ -1,17 +1,28 @@
 tap "homebrew/cask"
+tap "homebrew/cask-drivers"
 
 cask "bitwarden"
 cask "docker"
 cask "fantastical"
+cask "farrago"
 cask "firefox"
 cask "google-backup-and-sync"
 cask "google-chrome"
+cask "iterm2"
+cask "loopback"
+cask "obs"
+cask "obsidian"
 cask "postman"
 cask "rectangle"
 cask "slack"
 cask "spotify"
+cask "tuple"
 cask "visual-studio-code"
 cask "vlc"
+
+# cask-drivers
+cask "elgato-control-center"
+cask "elgato-stream-deck"
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 cask "qlcolorcode"
