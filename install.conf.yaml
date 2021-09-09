@@ -13,6 +13,7 @@
     ~/.fzf.zsh:
     ~/.gitconfig:
     ~/.gitconfig.local:
+      ignore-missing: true
     ~/.gitignore:
     ~/.ssh/config:
       path: ssh/config
