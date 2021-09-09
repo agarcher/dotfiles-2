@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # "Real" git is the second one returned by 'which'
-REAL_GIT=$(which -a git | sed -n 2p)
+REAL_GIT=$(which -a git | uniq | sed -n 2p)
 
 # Does the remote "origin" point to a Shopify repo?
 if ("$REAL_GIT" remote -v 2>/dev/null |
@@ -10,6 +10,7 @@ if ("$REAL_GIT" remote -v 2>/dev/null |
     # Yes. Configure git to use shopify email.
     export GIT_AUTHOR_EMAIL='adam.archer@shopify.com'
     export GIT_COMMITTER_EMAIL='adam.archer@shopify.com'
+
 fi
 
 "$REAL_GIT" "$@"
