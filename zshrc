@@ -2,7 +2,7 @@
 export DOTFILES_DIR=$HOME/.dotfiles
 
 # initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
+autoload -Uz compinit
 compinit
 
 # Make utilities available
