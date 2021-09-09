@@ -28,6 +28,6 @@
   # install homebrew packages from Brewfile
   - brew bundle
   # install casks from Caskfile
-  # - brew bundle --file=$(DOTFILES_DIR)/Caskfile || true
+  - brew bundle --file=$(DOTFILES_DIR)/Caskfile || true
   # additional setup and configuration
   - /bin/bash script/extras.sh
