@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-# "Real" git is the second one returned by 'which'
-REAL_GIT=$(which -a git | uniq | sed -n 2p)
+# our alias to this file is only present in zsh
+# which git is the real git in bash
+REAL_GIT=$(which git)
 
 # Does the remote "origin" point to a Shopify repo?
 if ("$REAL_GIT" remote -v 2>/dev/null |
