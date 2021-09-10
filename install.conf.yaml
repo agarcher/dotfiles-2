@@ -23,6 +23,8 @@
     ~/.tmux.conf.local:
     ~/.vimrc:
     ~/.zshrc:
+    ~/.zshrc.local:
+      ignore-missing: true
 
 - shell:
   # install homebrew
