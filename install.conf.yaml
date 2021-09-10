@@ -10,6 +10,8 @@
 - clean: ['~']
 
 - link:
+    ~/.config/karabiner:
+      path: config/karabiner
     ~/.fzf.zsh:
     ~/.gitconfig:
     ~/.gitconfig.local:
