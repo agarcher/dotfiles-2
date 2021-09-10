@@ -11,5 +11,7 @@ dockutil --no-restart --add "/Applications/Bitwarden.app"
 dockutil --no-restart --add "/Applications/Spotify.app"
 dockutil --no-restart --add "/Applications/Loopback.app"
 dockutil --no-restart --add "/Applications/Farrago.app"
+dockutil --no-restart --add "/System/Applications/Utilities/Audio MIDI Setup.app"
+dockutil --no-restart --add "/System/Applications/Utilities/Activity Monitor.app"
 
 killall Dock
