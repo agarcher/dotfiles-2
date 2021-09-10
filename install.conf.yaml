@@ -31,7 +31,5 @@
   - brew bundle --file=script/Brewfile
   # install casks from Caskfile
   - brew bundle --file=script/Caskfile
-  # install vscode extensions
-  - /bin/bash script/code-ext.sh
   # additional setup and configuration
   - /bin/bash script/extras.sh
