@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # make homebrew zsh the default shell
 if ! grep -q "$(which zsh)" /etc/shells; then
