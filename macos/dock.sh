@@ -15,5 +15,6 @@ dockutil --no-restart --add "/Applications/Loopback.app"
 dockutil --no-restart --add "/Applications/Farrago.app"
 dockutil --no-restart --add "/System/Applications/Utilities/Audio MIDI Setup.app"
 dockutil --no-restart --add "/System/Applications/Utilities/Activity Monitor.app"
+dockutil --no-restart --add "/Applications/Ecamm Live.app"
 
 killall Dock
