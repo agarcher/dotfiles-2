@@ -33,7 +33,9 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
-if [ -z "$TMUX" ]
-then
-  tmux attach -t default || tmux new -s default
+if [[ -n $ZSH_INIT_COMMAND ]]; then
+    echo "Running: $ZSH_INIT_COMMAND"
+    eval "$ZSH_INIT_COMMAND"
 fi
+
+[[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
