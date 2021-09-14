@@ -33,9 +33,10 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
-if [[ -n $ZSH_INIT_COMMAND ]]; then
-    echo "Running: $ZSH_INIT_COMMAND"
-    eval "$ZSH_INIT_COMMAND"
+if [[ "iTerm.app" = "$TERM_PROGRAM" ]]; then
+  iterm-shell && exit
+elif [[ "vscode" = "$TERM_PROGRAM" ]]; then
+  code-shell && exit
 fi
 
 [[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
