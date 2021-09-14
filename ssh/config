@@ -1,3 +1,7 @@
+# Configuration to connect to Spin-managed development environments.
+# Important: leave this at the top of this SSH configuration file.
+Include ~/.spin/ssh/include
+
 Host *
   UseKeychain yes
   AddKeysToAgent yes

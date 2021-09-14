@@ -6,5 +6,4 @@ brew 'reattach-to-user-namespace'
 brew 'thefuck'
 brew 'the_silver_searcher'
 brew 'tmux'
-brew 'wireguard-tools' # VPN client for spin
 brew 'zsh'
