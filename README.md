@@ -8,6 +8,8 @@ Parts of this repo are not my own and has been taken from others. My [original d
 
 I took heavy inspiration from https://github.com/webpro/dotfiles and https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789 and ultimately decided to use https://github.com/anishathalye/dotbot as a foundation, mostly because it seemed widely accepted and because it would do a lot of the things I needed to do without putting a bunch of code in my dotfiles repo that I would need to maintain.
 
+What came from the rewrite is a combination of things from both https://github.com/holman/, https://github.com/webpro/, https://github.com/anishathalye/, and many others, as well as my own customizations.
+
 ## Usage
 
 The structure and install scripts are all based on https://github.com/anishathalye/dotbot.
