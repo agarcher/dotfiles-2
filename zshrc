@@ -33,6 +33,7 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
+# once tmux launches, $TERM_PROGRAM = "tmux" and this is bypassed
 if [[ "iTerm.app" = "$TERM_PROGRAM" ]]; then
   iterm-shell && exit
 elif [[ "vscode" = "$TERM_PROGRAM" ]]; then
@@ -40,3 +41,6 @@ elif [[ "vscode" = "$TERM_PROGRAM" ]]; then
 fi
 
 [[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
+if [ -e /Users/agarcher/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/agarcher/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+[[ -x /usr/local/bin/brew ]] && eval $(/usr/local/bin/brew shellenv)
