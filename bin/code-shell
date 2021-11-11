@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # https://medium.com/@jeanmark.wright/making-vs-code-and-tmux-awesome-9938081b9c25
 # https://medium.com/@joaomoreno/persistent-terminal-sessions-in-vs-code-8fc469ed6b41

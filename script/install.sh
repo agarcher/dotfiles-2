@@ -12,13 +12,14 @@ then
 
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-  if command -v apt-get &> /dev/null; then
-    echo "  Linux detected, installing homebrew dependencies"
-    sudo apt-get install build-essential
-  fi
-
   # add linuxbrew to path for remainder of install script
   test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
+# linux detected, installing some linux specific dependencies
+if command -v apt-get &> /dev/null; then
+  echo "  Linux detected, installing dependencies"
+  sudo apt-get -y install build-essential bc
 fi
 
 # Install Brewfile packages

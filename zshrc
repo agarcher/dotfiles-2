@@ -33,11 +33,14 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
-# once tmux launches, $TERM_PROGRAM = "tmux" and this is bypassed
-if [[ "iTerm.app" = "$TERM_PROGRAM" ]]; then
-  iterm-shell && exit
-elif [[ "vscode" = "$TERM_PROGRAM" ]]; then
-  code-shell && exit
+# auto launch tmux (only on mac for now)
+if is-macos; then
+  # once tmux launches, $TERM_PROGRAM = "tmux" and this is bypassed
+  if [[ "iTerm.app" = "$TERM_PROGRAM" ]]; then
+    iterm-shell && exit
+  elif [[ "vscode" = "$TERM_PROGRAM" ]]; then
+    code-shell && exit
+  fi
 fi
 
 [[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
