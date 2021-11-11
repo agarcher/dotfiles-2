@@ -1,6 +1,9 @@
 # shortcut to this dotfiles path is $ZSH
 export DOTFILES_DIR=$HOME/.dotfiles
 
+# source the spin default first, if they are present
+[[ -x /etc/zsh/zshrc.default.inc.zsh ]] && . /etc/zsh/zshrc.default.inc.zsh
+
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -Uz compinit
 compinit
