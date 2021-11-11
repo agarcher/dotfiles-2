@@ -12,7 +12,6 @@
 - link:
     ~/.config/karabiner:
       path: config/karabiner
-    ~/.fzf.zsh:
     ~/.gitconfig:
     ~/.gitconfig.local:
       ignore-missing: true
@@ -27,11 +26,4 @@
       ignore-missing: true
 
 - shell:
-  # install homebrew
-  - /bin/bash script/homebrew.sh
-  # install homebrew packages from Brewfile
-  - brew bundle --file=script/Brewfile
-  # install casks from Caskfile
-  - brew bundle --file=script/Caskfile
-  # additional setup and configuration
-  - /bin/bash script/extras.sh
+  - /bin/bash script/install.sh

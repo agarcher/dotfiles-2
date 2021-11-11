@@ -1,6 +1,12 @@
+tap 'homebrew/bundle'
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 
+# brew formulas that are mac os specific
+brew 'dockutil'
+brew 'reattach-to-user-namespace'
+
+# mac os casks
 cask "bitwarden"
 cask "docker"
 cask "fantastical"

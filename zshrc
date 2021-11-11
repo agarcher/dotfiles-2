@@ -44,3 +44,4 @@ fi
 if [ -e /Users/agarcher/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/agarcher/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 [[ -x /usr/local/bin/brew ]] && eval $(/usr/local/bin/brew shellenv)
+[[ -x /home/linuxbrew/.linuxbrew ]] && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
