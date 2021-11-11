@@ -13,6 +13,7 @@
     ~/.config/karabiner:
       path: config/karabiner
     ~/.gitconfig:
+      force: true
     ~/.gitconfig.local:
       ignore-missing: true
     ~/.gitignore:
@@ -22,6 +23,7 @@
     ~/.tmux.conf.local:
     ~/.vimrc:
     ~/.zshrc:
+      force: true
     ~/.zshrc.local:
       ignore-missing: true
 
